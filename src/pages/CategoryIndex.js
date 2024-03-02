@@ -13,15 +13,15 @@ function CategoryIndex(props) {
   const { category } = useParams();
   const [filteredCookies, setFilteredCookies] = useState([]);
   useEffect(() => {
-    // axios
-    //   .get(process.env.REACT_APP_RENDER_URL + category + '/')
-    //   .then((response) => {
-    //     setFilteredCookies(response.data);
-    //     console.log(response);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+    axios
+      .get(process.env.REACT_APP_RENDER_URL + category + '/')
+      .then((response) => {
+        setFilteredCookies(response.data);
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
   if (!filteredCookies) {
     return <h1>loading</h1>;
