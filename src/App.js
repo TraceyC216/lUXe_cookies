@@ -21,9 +21,9 @@ function App() {
       </header>
       <Routes>
           <Route exact path="/" element={<Home />}/>
-          <Route path="/category/:id" element={<Info/>}/>
-          <Route path="/:category" element={<CategoryIndex />}/>
           <Route path="/about" element={<About />}/> 
+          <Route path="/category/:id" element={<Info/>}/>
+          <Route path="/:category" element={<CategoryIndex />}/>  
       </Routes>
      
     </div>
