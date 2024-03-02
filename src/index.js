@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+export const API_URL = "http://localhost:3000/api/cookies/";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Router>
     <App />
+  </Router>
   </React.StrictMode>
 );
 

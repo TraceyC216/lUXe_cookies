@@ -5,9 +5,83 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+
+.card-img-top {
+  max-height: 200px; /* Adjust the height as needed */
+  width: auto; /* Ensures the image adjusts its width responsively */
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid black;
+  padding: 5px;
+  width: 90%;
+  margin: auto; 
+} */
+
+.infoImage{
+  max-height: 200px;
+}
+
+/* .welcome{
+  display: grid | inline-grid;
+} */
+
+#hero {
+  background-color: #ddc5cd;
+  border: 3px solid lightgrey;
+  padding: 150px 150px;
+  /* margin: 10px 250px 0 250px; */
+}
+
+/* #home_images{
+  display: flex;
+  flex-direction: row;
+  margin-left: 250px;
+} */
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1%;
+ 
+}
+
+.infoImage{
+ border-radius: 8px;
+ width: 300px;
+ height: 400px;
+ max-width: 50%;
+ max-height: 50%;
+}
+
+.infoText{
+  max-width: 350px;
+  margin: auto;
+ 
+}
+
+.infoImage, .infoText{
+display: inline-block;
+padding: 10px;
+margin-top: 100px;
+}
+
