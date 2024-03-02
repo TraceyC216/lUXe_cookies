@@ -28,6 +28,7 @@ function About(props) {
                 the experience, I built a wireflow to mimic the user's experience.
             </p>
         </div>
+        <img src="https://i.imgur.com/a8KDWvR.png" alt="wireframe" />
     </div>
     )
 };

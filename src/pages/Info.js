@@ -9,7 +9,7 @@ export default function Info(){
     const navigate = useNavigate();
     useEffect(() => {
         axios
-        .get("http://localhost:8000/cookies/" + id + "/")
+        .get(`${process.env.REACT_APP_RENDER_URL || 'http://localhost:8000'}cookies/${id}/`)
         .then((response) => {
           setInfo(response.data);
           console.log(response.data,'this is the data');

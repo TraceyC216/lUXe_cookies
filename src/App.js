@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CookieApi from './components/Cookiesapi';
 
 //IMPORT COMPONENTS AND ROUTES
 import Header from "./components/Header";
@@ -15,22 +14,18 @@ import Info from './pages/Info';
 
 
 function App() {
-  const [cookies, setCookies] = useState([]);
   return (
     <div className="App vh-100">
-      <div>
-        <CookieApi setCookies={setCookies}/>
-      </div>
       <header id="header">
       <Header />
       </header>
       <Routes>
-          <Route exact path="/" element={<Home cookies={cookies}/>}/>
+          <Route exact path="/" element={<Home />}/>
           <Route path="/category/:id" element={<Info/>}/>
           <Route path="/:category" element={<CategoryIndex />}/>
           <Route path="/about" element={<About />}/> 
       </Routes>
-     <Footer fixed="bottom"/>
+     
     </div>
   );
 }
