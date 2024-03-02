@@ -14,7 +14,7 @@ function CategoryIndex(props) {
   const [filteredCookies, setFilteredCookies] = useState([]);
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_RENDER_URL}${category}/`)
+      .get(process.env.REACT_APP_RENDER_URL + category + '/')
       .then((response) => {
         setFilteredCookies(response.data);
         console.log(response);
