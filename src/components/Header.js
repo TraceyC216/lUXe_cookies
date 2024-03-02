@@ -8,6 +8,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import {Link} from 'react-router-dom'
 
 function Header() {
     return (
@@ -18,15 +19,15 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Link to="/"><Nav.Link>Home</Nav.Link></Link>
             <NavDropdown title="Cookies" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/traditional">Traditional Cookies</NavDropdown.Item>
-              <NavDropdown.Item href="/allergy">
+            <Link to="/traditional"><NavDropdown.Item>Traditional Cookies</NavDropdown.Item></Link>
+            <Link to="/allergy"><NavDropdown.Item>
                 Allergy Sensitive Cookies
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/decorated">Hand Decorated Cookies</NavDropdown.Item>
+              </NavDropdown.Item></Link>
+              <Link to="/decorated"><NavDropdown.Item>Hand Decorated Cookies</NavDropdown.Item></Link>
             </NavDropdown>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Link to="/about"><Nav.Link>About</Nav.Link></Link>
           </Nav>
         
       
