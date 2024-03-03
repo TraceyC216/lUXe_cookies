@@ -19,7 +19,6 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link className="nav-link" to="/">Home</Link>
             <NavDropdown title="Cookies" id="basic-nav-dropdown">
             <Link className="dropdown-item" to="/traditional">Traditional Cookies</Link>
             <Link className="dropdown-item" to="/allergy">
@@ -40,7 +39,7 @@ function Header() {
             />
           </Col>
           <Col xs="auto">
-            <Button type="submit">Submit</Button>
+            <Button type="submit" className="btn btn-info">Submit</Button>
           </Col>
         </Row>
       </Form>

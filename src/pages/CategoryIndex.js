@@ -31,7 +31,7 @@ function CategoryIndex(props) {
      
           <section id="shop" className="block shop-block">
             <Container fluid>
-            <h1>{category}</h1>
+            <h1 className="page_id">{category}</h1>
               <Row>
               {filteredCookies.map((cookie) => {
                 return (
@@ -43,7 +43,7 @@ function CategoryIndex(props) {
                       <Card.Body>
                         <Card.Title>{cookie.name}</Card.Title>
                         <Card.Text>{cookie.description}</Card.Text>
-                        <Link to={`/category/${cookie.id}`} className='btn btn-primary'>Learn More</Link>
+                        <Link to={`/category/${cookie.id}`} className='btn btn-info'>Learn More</Link>
                       </Card.Body>
                     </Card>
                   </div>

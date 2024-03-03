@@ -30,7 +30,7 @@ export default function Info(){
        <h4>{info.name}</h4> 
        <p>{info.description}</p>
        <p>Price: {info.price}</p>
-       <button onClick={() => navigate(-1)} className='btn btn-primary'>Return to cookie page</button>
+       <button onClick={() => navigate(-1)} className='btn btn-info'>Return to cookie page</button>
        </div>
     </>
     );
