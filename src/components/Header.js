@@ -15,19 +15,18 @@ function Header() {
             <div className="nav">
          <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand><Link to="/">lUXe cookies</Link></Navbar.Brand>
+        <Link className="navbar-brand" to="/">lUXe cookies</Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link><Link to="/">Home</Link></Nav.Link>
+            <Link className="nav-link" to="/">Home</Link>
             <NavDropdown title="Cookies" id="basic-nav-dropdown">
-            <NavDropdown.Item><Link to="/traditional">Traditional Cookies</Link></NavDropdown.Item>
-            <NavDropdown.Item><Link to="/allergy">
+            <Link className="dropdown-item" to="/traditional">Traditional Cookies</Link>
+            <Link className="dropdown-item" to="/allergy">
                 Allergy Sensitive Cookies</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item><Link to="/decorated">Hand Decorated Cookies</Link></NavDropdown.Item>
+              <Link className="dropdown-item" to="/decorated">Hand Decorated Cookies</Link>
             </NavDropdown>
-            <Nav.Link><Link to="/about">About</Link></Nav.Link>
+            <Link className="nav-link" to="/about">About</Link>
           </Nav>
         
       
