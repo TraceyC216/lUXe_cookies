@@ -30,7 +30,7 @@ function About(props) {
                 information will be, creates a visual for the relationships between the pages, and may offer an idea
                 of how long the build might take.</p>
          
-        <img src="https://i.imgur.com/yKOclLb.png" alt="sitemap" height={800} width={1150} />
+        <img className="img-fluid" src="https://i.imgur.com/j0O6fPQ.png" alt="sitemap"/>
         </div>
         <br />
         
