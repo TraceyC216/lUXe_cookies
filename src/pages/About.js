@@ -40,7 +40,7 @@ function About(props) {
                 by clicking within the title bar below and running the prototype (by clicking the play icon) once you've reached the prototype page. 
             </p>
         
-        <iframe
+        <iframe className="img-fluid"
         style={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
         width="800" 
         height="450" 
